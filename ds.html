@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+    <link rel="stylesheet" href= " css/paper.css" >
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <script src="jquery/jquery.js" type="text/javascript"></script>
+    <script src="jquery/paper-ds.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body >
+    <div class="hero" style="background:white;">
+      <div id="nav-bar">
+        <div id="nav-logo"><a href="index.html">QuizShow</a></div>
+        <div id="nav-link" >
+          <i class="fa fa-close" onclick="closeMenu()"></i>
+          <ul>
+          <a href="#"><li>course</li></a>
+        <a> <li>topic<i class="fas fa-angle-double-down"></i>
+            <div class="sub-menu">
+              <ul>
+                <a href="c.html"><li>C</li></a>
+                <a href="cpp.html"><li>c++</li></a>
+                <a href="java.html"><li>Java</li></a>
+                <a href="#"><li>Data Structure</li></a>
+              </ul>
+            </div>
+            </li></a>
+          <a href="#"><li>about us</li></a>
+          </ul>
+          <button type="submit" onclick="func()" class="signup-btn">sign up</button>
+          <script>
+        function func()
+        {
+          alert("This feature will come soon");
+        }
+      </script>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+    <a name="top"></a>
+    <div class="page-heading">
+      <h1>Data Structure Questions</h1>
+    </div>
+    <div class="range">
+      <a href="index.html">Home</a> \\ <a href="#">DS</a> \\ DS-questions-1
+    </div>
+    <div>
+      <div class="paper">
+        <p class="question">1. A system wherein items are added from one and removed from the other end. ?<br/></p>
+        <div class="options">
+          <input id="a11" type="radio" value="A" name="first" />&nbsp;&nbsp;Stack<br/><br/>
+          <input id="a12" type="radio" value="b" name="first" />&nbsp;&nbsp;Queue<br/><br/>
+          <input id="a13" type="radio" value="c" name="first" />&nbsp;&nbsp;Linked List<br/><br/>
+          <input id="a14" type="radio" value="d" name="first" />&nbsp;&nbsp;Array<br/><br/>
+          <button id="btn1"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl1" style="visibility:hidden ; color: red;" >Wrong</label>
+
+          <div id="div_ans1" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn11" class="exp-btn">View Explanation</button>
+              <div id="show_ans1" class="explanation">In a queue, the items are inserted from the rear end and deleted from the front end.
+                <br>
+              </div>
+              <script>  $("#show_ans1").hide();</script>
+          </div>
+        </div>
+<hr>
+        <p class="question">2. A data structure that follows the FIFO principle.<br/></p>
+        <div class="options">
+          <input id="a21" type="radio" value="A" name="first" />&nbsp;&nbsp;Queue <br/><br/>
+          <input id="a22" type="radio" value="b" name="first" />&nbsp;&nbsp;LL<br/><br/>
+          <input id="a23" type="radio" value="c" name="first" />&nbsp;&nbsp;Stack<br/><br/>
+          <input id="a24" type="radio" value="d" name="first" />&nbsp;&nbsp;Union<br/><br/>
+          <button id="btn2"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl2" style="visibility:hidden ; color: red;" >Wrong</label>
+        
+          <div id="div_ans2" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn22" class="exp-btn">View Explanation</button>
+              <div id="show_ans2" class="explanation">The answer is Queue. A Queue follows the FIFO principle. FIFO stands for First In First Out.
+              </div>
+              <script>  $("#show_ans2").hide();</script>
+          </div>
+        </div>
+        <hr>
+        
+        <p class="question">3. A _____is diagram that depicts the flow of a program <br/></p>
+        <div class="options">
+          <input id="a31" type="radio" value="A" name="first" />&nbsp;&nbsp; Algorithm<br/><br/>
+          <input id="a32" type="radio" value="b" name="first" />&nbsp;&nbsp; Hash Table <br/><br/>
+          <input id="a33" type="radio" value="c" name="first" />&nbsp;&nbsp; Graph<br/><br/>
+          <input id="a34" type="radio" value="d" name="first" />&nbsp;&nbsp; Flowchart<br/><br/>
+          <button id="btn3"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl3" style="visibility:hidden ; color: red;" >Wrong</label>
+        
+          <div id="div_ans3" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn33" class="exp-btn">View Explanation</button>
+              <div id="show_ans3" class="explanation">A flowchart is a diagram that helps us determine the flow of the program. Other options are irrelevant. <br>
+              </div>
+              <script>  $("#show_ans3").hide();</script>
+          </div>
+        </div>
+        <hr>
+        
+        <p class="question">4. What is the time complexity of inserting at the end in dynamic arrays??<br/></p>
+        <div class="options">
+          <input id="a41" type="radio" value="A" name="first" />&nbsp;&nbsp;O(1)<br/><br/>
+          <input id="a42" type="radio" value="b" name="first" />&nbsp;&nbsp;O(n)<br/><br/>
+          <input id="a43" type="radio" value="c" name="first" />&nbsp;&nbsp;O(logn)<br/><br/>
+          <input id="a44" type="radio" value="d" name="first" />&nbsp;&nbsp;either O(1) or O(n) <br/><br/>
+          <button id="btn4"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl4" style="visibility:hidden ; color: red;" >Wrong</label>
+        
+          <div id="div_ans4" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn44" class="exp-btn">View Explanation</button>
+              <div id="show_ans4" class="explanation"> Depending on whether the array is full or not, the complexity in dynamic array varies. If you try to insert into an array which is not full, then the element is simply stored at the end, this takes O(1) time. If you try to insert into an array which is full, first you will have to allocate an array with double the size of the current array and then copy all the elements into it and finally insert the new element, this takes O(n) time.<br>
+              </div>
+              <script>  $("#show_ans4").hide();</script>
+          </div>
+        </div>
+        <hr>
+        
+        <p class="question">5. What is the time complexity to count the number of elements in the linked list? ?<br/></p>
+        <div class="options">
+          <input id="a51" type="radio" value="A" name="first" />&nbsp;&nbsp;O(1)<br/><br/>
+          <input id="a52" type="radio" value="b" name="first" />&nbsp;&nbsp;O(n)<br/><br/>
+          <input id="a53" type="radio" value="c" name="first" />&nbsp;&nbsp;O(logn) <br/><br/>
+          <input id="a54" type="radio" value="d" name="first" />&nbsp;&nbsp;O(n<sup>2</sup>)<br/><br/>
+          <button id="btn5"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl5" style="visibility:hidden ; color: red;" >Wrong</label>
+        
+          <div id="div_ans5" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn55" class="exp-btn">View Explanation</button>
+              <div id="show_ans5" class="explanation">To count the number of elements, you have to traverse through the entire list, hence complexity is O(n)..<br>
+              </div>
+            <script>  $("#show_ans5").hide();</script>
+          </div>
+        </div>
+        <hr>
+        
+        <p class="question">6. Which of these is not an application of linked list?<br/></p>
+        <div class="options">
+          <input id="a61" type="radio" value="A" name="first" />&nbsp;&nbsp;To implement file systems <br/><br/>
+          <input id="a62" type="radio" value="b" name="first" />&nbsp;&nbsp; For separate chaining in hash-tables<br/><br/>
+          <input id="a63" type="radio" value="c" name="first" />&nbsp;&nbsp;To implement non-binary trees<br/><br/>
+          <input id="a64" type="radio" value="d" name="first" />&nbsp;&nbsp;Random Access of elements <br/><br/>
+          <button id="btn6"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl6" style="visibility:hidden ; color: red;" >Wrong</label>
+        
+          <div id="div_ans6" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn66" class="exp-btn">View Explanation</button>
+              <div id="show_ans6" class="explanation">To implement file system, for separate chaining in hash-tables and to implement non-binary trees linked lists are used. Elements are accessed sequentially in linked list. Random access of elements is not an applications of linked list. .<br/>
+              </div>
+              <script>
+                  $("#show_ans6").hide();
+                  </script>
+          </div>
+        </div>
+        <hr>
+        
+        <p class="question">7.  Which of the following is false about a doubly linked list ?<br/></p>
+        <div class="options">
+          <input id="a71" type="radio" value="A" name="first" />&nbsp;&nbsp;We can navigate in both the directions <br/><br/>
+          <input id="a72" type="radio" value="b" name="first" />&nbsp;&nbsp; It requires more space than a singly linked list<br/><br/>
+          <input id="a73" type="radio" value="c" name="first" />&nbsp;&nbsp; The insertion and deletion of a node take a bit longer<br/><br/>
+          <input id="a74" type="radio" value="d" name="first" />&nbsp;&nbsp; Implementing a doubly linked list is easier than singly linked list<br/><br/>
+          <button id="btn7"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl7" style="visibility:hidden ; color: red;" >Wrong</label>
+        
+          <div id="div_ans7" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn77" class="exp-btn">View Explanation</button>
+              <div id="show_ans7" class="explanation">A doubly linked list has two pointers ‘left’ and ‘right’ which enable it to traverse in either direction. Compared to singly liked list which has only a ‘next’ pointer, doubly linked list requires extra space to store this extra pointer. Every insertion and deletion requires manipulation of two pointers, hence it takes a bit longer time. Implementing doubly linked list involves setting both left and right pointers to correct nodes and takes more time than singly linked list.<br>
+              </div>
+              <script>  $("#show_ans7").hide();</script>
+          </div>
+        </div>
+        <hr>
+        
+        <p class="question">8.What is the worst case time complexity of inserting a node in a doubly linked list? <br/></p>
+        <div class="options">
+          <input id="a81" type="radio" value="A" name="first" />&nbsp;&nbsp;O(nlogn) <br/><br/>
+          <input id="a82" type="radio" value="b" name="first" />&nbsp;&nbsp;O(logn)<br/><br/>
+          <input id="a83" type="radio" value="c" name="first" />&nbsp;&nbsp;O(n)<br/><br/>
+          <input id="a84" type="radio" value="d" name="first" />&nbsp;&nbsp;O(1)<br/><br/>
+          <button id="btn8"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl8" style="visibility:hidden ; color: red;" >Wrong</label>
+        
+          <div id="div_ans8" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn88" class="exp-btn">View Explanation</button>
+              <div id="show_ans8" class="explanation"> In the worst case, the position to be inserted maybe at the end of the list, hence you have to traverse through the entire list to get to the correct position, hence O(n).<br>
+              </div>
+              <script>  $("#show_ans8").hide();</script>
+          </div>
+        </div>
+        <hr>
+        <p class="question">9.  What differentiates a circular linked list from a normal linked list? <br/></p>
+        <div class="options">
+          <input id="a91" type="radio" value="A" name="first" />&nbsp;&nbsp; You cannot have the ‘next’ pointer point to null in a circular linked list<br/><br/>
+          <input id="a92" type="radio" value="b" name="first" />&nbsp;&nbsp; It is faster to traverse the circular linked list<br/><br/>
+          <input id="a93" type="radio" value="c" name="first" />&nbsp;&nbsp;You may or may not have the ‘next’ pointer point to null in a circular linked list<br/><br/>
+          <input id="a94" type="radio" value="d" name="first" />&nbsp;&nbsp;Head node is known in circular linked lis<br/><br/>
+          <button id="btn9"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl9" style="visibility:hidden ; color: red;" >Wrong</label>
+        
+          <div id="div_ans9" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn99" class="exp-btn">View Explanation</button>
+              <div id="show_ans9" class="explanation">The ‘next’ pointer points to null only when the list is empty, otherwise it points to the head of the list. Every node in circular linked list can be a starting point(head). <br>
+              </div>
+              <script>  $("#show_ans9").hide();</script>
+          </div>
+        </div>
+        <hr>
+        <p class="question">10.  What is the time complexity of searching for an element in a circular linked list??<br/></p>
+        <div class="options">
+          <input id="a101" type="radio" value="A" name="first" />&nbsp;&nbsp;O(n) <br/><br/>
+          <input id="a102" type="radio" value="b" name="first" />&nbsp;&nbsp;O(nlogn) <br/><br/>
+          <input id="a103" type="radio" value="c" name="first" />&nbsp;&nbsp;O(1)<br/><br/>
+          <input id="a104" type="radio" value="d" name="first" />&nbsp;&nbsp;O(n2) <br/><br/>
+          <button id="btn10"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl10" style="visibility:hidden ; color: red;" >Wrong</label>
+        
+          <div id="div_ans10" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn1010" class="exp-btn">View Explanation</button>
+              <div id="show_ans10" class="explanation">  In the worst case, you have to traverse through the entire list of n elements<br>
+              </div>
+              <script>  $("#show_ans10").hide();</script>
+          </div>
+        </div>
+
+             
+        <button id="next" onclick="document.location='ds2.html' " >next</button>   
+      </div>
+    </div>
+    <div id="score">
+      <button type="button" onclick="showResult()">score</button>
+      <label id="result">0</label> out of 10
+    </div>
+    <div class="related-topic">
+      <h1>Other topics</h1>
+      <ul>
+        <a href="cpp.html"><li>C++</li></a>
+        <a href="java.html"><li>JAVA</li></a>
+        <a href="ds.html"><li>Data Structure</li></a>
+      </ul>
+    </div>
+    <div id="my-footer" >
+      <h1 id="get-in-touch">Get in Touch</h1>
+      <h1 id="if-you">If you love coding as much as I do ?</h1>
+      <p>If you love coding as much as I do ? <br>
+      then Let's discuss the problems of different languages.
+      lets support each other.</p>
+    </div>
+    <div id="dm-div"><a href="https://www.linkedin.com/in/pankaj-kharai-235b4517b/"><button  id="contactme-btn" type="button" onclick="" >CONTACT ME</button></a>
+    </div>
+    <div id="top-btn"><a href="#top"><span>Go to top</span></a></div>
+
+    <!-- <div id="footer" > -->
+      <div id="footer-link">
+        <h1><i class="fas fa-copyright"></i>copyright 2020 quizShow.com  | privacy | terms n conditions</h1>
+      </div>
+    
+
+    <div class="vertical-bar">
+      <div class="search-icon" >
+        <i class="fas fa-list"></i>
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="social-icon" > 
+        <a href="https://www.facebook.com/pankaj.kharai.73"> <i class="fab fa-facebook"></i></a><br>
+        <a href="https://www.instagram.com/pankaj_kharai/?hl=en"><i class="fab fa-instagram"></i></a><br>
+        <a href="https://twitter.com/pranaykharai"><i class="fab fa-twitter"></i></a><br>
+        <a href="https://www.linkedin.com/in/pankaj-kharai-235b4517b/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <br/> 
+  </div>
+</div> 
+</body>
+<script>
+  var show = document.getElementById("nav-link");
+  function showMenu()
+  {
+    show.style.right = "0";
+  }
+  function closeMenu()
+  {
+    show.style.right = "-200px";
+  }
+</script>
+</html>

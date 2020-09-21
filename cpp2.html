@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+    <link rel="stylesheet" href= " css/paper.css" >
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <script src="jquery/jquery.js" type="text/javascript"></script>
+    <script src="jquery/paper-cpp2.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body >
+    <div class="hero" style="background:white;">
+      <div id="nav-bar">
+        <div id="nav-logo"><a href="index.html">QuizShow</a></div>
+        <div id="nav-link" >
+          <i class="fa fa-close" onclick="closeMenu()"></i>
+          <ul>
+          <a href="#"><li>course</li></a>
+         <a> <li>topic<i class="fas fa-angle-double-down"></i>
+            <div class="sub-menu">
+              <ul>
+                <a href="c.html"><li>C</li></a>
+                <a href="cpp.html"><li>c++</li></a>
+                <a href="java.html"><li>Java</li></a>
+                <a href="ds.html"><li>Data Structure</li></a>
+              </ul>
+            </div>
+            </li></a>
+          <a href="#"><li>about us</li></a>
+          </ul>
+          <button type="submit" onclick="func()" class="signup-btn">sign up</button>
+          <script>
+        function func()
+        {
+          alert("This feature will come soon");
+        }
+      </script>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+    <a name="top"></a>
+    <div class="page-heading">
+      <h1>C++ Language Questions</h1>
+    </div>
+    <div class="range">
+      <a href="index.html">Home</a> \\ <a href="#">C++</a> \\ Cpp-questions-2
+    </div>
+    <div>
+      <div class="paper">
+        <p class="question">1.The void pointer can point to which type of objects? ?<br/></p>
+        <div class="options">
+          <input id="a11" type="radio" value="A" name="first" />&nbsp;&nbsp;int.<br/><br/>
+          <input id="a12" type="radio" value="b" name="first" />&nbsp;&nbsp;float<br/><br/>
+          <input id="a13" type="radio" value="c" name="first" />&nbsp;&nbsp;double<br/><br/>
+          <input id="a14" type="radio" value="d" name="first" />&nbsp;&nbsp;all of the mentioned<br/><br/>
+          <button id="btn1"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl1" style="visibility:hidden ; color: red;" >Wrong</label>
+
+          <div id="div_ans1" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn11" class="exp-btn">View Explanation</button>
+              <div id="show_ans1" class="explanation">Because it doesn’t know the type of object it is pointing to, So it can point to all objects. <br>
+              </div>
+              <script>  $("#show_ans1").hide();</script>
+          </div>
+        </div>
+
+<hr>
+         <p class="question">2. When does the void pointer can be dereferenced? <br/></p>
+         <div class="options">
+           <input id="a21" type="radio" value="A" name="first" />&nbsp;&nbsp; when it doesn’t point to any value<br/><br/>
+           <input id="a22" type="radio" value="b" name="first" />&nbsp;&nbsp; when it cast to another type of object <br/><br/>
+           <input id="a23" type="radio" value="c" name="first" />&nbsp;&nbsp;using delete keyword <br/><br/>
+           <input id="a24" type="radio" value="d" name="first" />&nbsp;&nbsp;using shift keyword <br/><br/>
+           <button id="btn2"  type="submit" class="submit-answer-btn">submit</button>
+           <label id="lbl2" style="visibility: hidden; color: red;" >Wrong</label>
+ 
+           <div id="div_ans2" style="display:none;" class="explain-div" >
+               <button type="button"  id="btn22" class="exp-btn">View Explanation</button>
+               <div id="show_ans2" class="explanation"> By casting the pointer to another data type, it can be dereferenced from the void pointer. <br>
+               </div>
+               <script>  $("#show_ans2").hide();</script>
+           </div>
+          </div>
+<hr>
+          <p class="question">3. The pointer can point to any variable that is not declared with which of these? ?<br/></p>
+          <div class="options">
+          <input id="a31" type="radio" value="A" name="first" />&nbsp;&nbsp;const<br/><br/>
+          <input id="a32" type="radio" value="b" name="first" />&nbsp;&nbsp;volatile<br/><br/>
+          <input id="a33" type="radio" value="c" name="first" />&nbsp;&nbsp;both const and volatile<br/><br/>
+          <input id="a34" type="radio" value="d" name="first" />&nbsp;&nbsp;static<br/><br/>
+          <button id="btn3"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl3" style="visibility:hidden ; color: red;" >Wrong</label>
+
+          <div id="div_ans3" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn33" class="exp-btn">View Explanation</button>
+              <div id="show_ans3" class="explanation">  Pointer can point to any variable that is not declared with const & volatile.<br>
+              </div>
+              <script>  $("#show_ans3").hide();</script>
+          </div>
+        </div>
+
+<hr>
+          <p class="question">4. A void pointer cannot point to which of these?<br/></p>
+          <div class="options">
+            <input id="a41" type="radio" value="A" name="first" />&nbsp;&nbsp;methods in c++<br/><br/>
+            <input id="a42" type="radio" value="b" name="first" />&nbsp;&nbsp;class member in c++ <br/><br/>
+            <input id="a43" type="radio" value="c" name="first" />&nbsp;&nbsp;methods & class member in c++ <br/><br/>
+            <input id="a44" type="radio" value="d" name="first" />&nbsp;&nbsp;none of the mentioned<br/><br/>
+            <button id="btn4"  type="submit" class="submit-answer-btn">submit</button>
+            <label id="lbl4" style="visibility: hidden; color: red;" >Wrong</label>
+          
+            <div id="div_ans4" style="display:none;" class="explain-div" >
+                <button type="button"  id="btn44" class="exp-btn">View Explanation</button>
+                <div id="show_ans4" class="explanation"> A void pointer can point to methods & class member in c++.<br>
+                </div>
+                <script>  $("#show_ans4").hide();</script>
+            </div>
+           </div>
+           <!-- start -->
+<hr>
+            <p class="question">5. What will be the output of the following C code ?<br/></p>
+            <pre class="code-part">
+              #include <iostream>
+                using namespace std;
+                int func(void *Ptr);
+                int main()
+                {
+                    char *Str = "abcdefghij";
+                    func(Str);
+                    return 0;
+                }
+                int func(void *Ptr)
+                {
+                    cout << Ptr;
+                    return 0;
+                }
+            </pre>
+           <div class="options">
+           <input id="a51" type="radio" value="A" name="first" />&nbsp;&nbsp;abcdefghij<br/><br/>
+           <input id="a52" type="radio" value="b" name="first" />&nbsp;&nbsp;address of string “abcdefghij”<br/><br/>
+           <input id="a53" type="radio" value="c" name="first" />&nbsp;&nbsp;compile time error<br/><br/>
+           <input id="a54" type="radio" value="d" name="first" />&nbsp;&nbsp; runtime erro<br/><br/>
+           <button id="btn5"  type="submit" class="submit-answer-btn">submit</button>
+           <label id="lbl5" style="visibility:hidden ; color: red;" >Wrong</label>
+
+           <div id="div_ans5" style="display: none;" class="explain-div" >
+               <button type="button"  id="btn55" class="exp-btn">View Explanation</button>
+               <div id="show_ans5" class="explanation"> Even though it is a void pointer, we gets the address. <br>
+               </div>
+               <script>  $("#show_ans5").hide();</script>
+           </div>
+         </div>
+<hr>
+
+          <p class="question">6. What will be the output of the following C++ code?<br/></p>
+          <pre>
+            #include <iostream>
+              using namespace std;
+              int main()
+              {
+                  int *p;
+                  void *vp;
+                  if (vp == p);
+                      cout << "equal";
+                  return 0;
+              }
+          </pre>
+          <div class="options">
+            <input id="a61" type="radio" value="A" name="first" />&nbsp;&nbsp;equal <br/><br/>
+            <input id="a62" type="radio" value="b" name="first" />&nbsp;&nbsp;no output<br/><br/>
+            <input id="a63" type="radio" value="c" name="first" />&nbsp;&nbsp;compile error<br/><br/>
+            <input id="a64" type="radio" value="d" name="first" />&nbsp;&nbsp;runtime error<br/><br/>
+            <button id="btn6"  type="submit" class="submit-answer-btn">submit</button>
+            <label id="lbl6" style="visibility: hidden; color: red;" >Wrong</label>
+          
+            <div id="div_ans6" style="display:none;" class="explain-div" >
+                <button type="button"  id="btn66" class="exp-btn">View Explanation</button>
+                <div id="show_ans6" class="explanation"> The void pointer is easily converted to any other type of pointer, so these are equal. <br>
+                </div>
+                <script>  $("#show_ans6").hide();</script>
+            </div>
+           </div>
+<hr>
+          <p class="question">7. What will be the output of the following C code ?<br/></p>
+          <pre>
+  #include <iostream>
+    using namespace std;
+    int main()
+    {
+  int i;
+  char c;
+  void *data;
+  i = 2;
+  c = 'd';
+  data = &i;
+  cout<<"data points to integer value" << data;
+  data = &c;
+  cout<<"data now points to character" << data;
+  return 0;
+   }
+          </pre>
+           <div class="options">
+           <input id="a71" type="radio" value="A" name="first" />&nbsp;&nbsp;2d<br/><br/>
+           <input id="a72" type="radio" value="b" name="first" />&nbsp;&nbsp;3d<br/><br/>
+           <input id="a73" type="radio" value="c" name="first" />&nbsp;&nbsp;two memory addresses<br/><br/>
+           <input id="a74" type="radio" value="d" name="first" />&nbsp;&nbsp;4d<br/><br/>
+           <button id="btn7"  type="submit" class="submit-answer-btn">submit</button>
+           <label id="lbl7" style="visibility:hidden ; color: red;" >Wrong</label>
+
+           <div id="div_ans7" style="display: none;" class="explain-div" >
+               <button type="button"  id="btn77" class="exp-btn">View Explanation</button>
+               <div id="show_ans7" class="explanation"> 
+                Because the data points to the address value of the variables only, So it is printing the memory address of these two variable.
+               </div>
+               <script>  $("#show_ans7").hide();</script>
+           </div>
+         </div>
+
+<hr>
+           <p class="question">8. Which of the following statements are correct about the below program ?<br/></p>
+           <pre>
+            #include <iostream>
+              using namespace std;
+              int main()
+              {
+                  int n = 5;
+                  void *p = &n;
+                  int *pi = static_cast<int*>(p);
+                  cout << *pi << endl;
+                  return 0;
+              }
+           </pre>
+           <div class="options">
+             <input id="a81" type="radio" value="A" name="first" />&nbsp;&nbsp;5 <br/><br/>
+             <input id="a82" type="radio" value="b" name="first" />&nbsp;&nbsp;6 <br/><br/>
+             <input id="a83" type="radio" value="c" name="first" />&nbsp;&nbsp; compile time error<br/><br/>
+             <input id="a84" type="radio" value="d" name="first" />&nbsp;&nbsp;runtime error<br/><br/>
+             <button id="btn8"  type="submit" class="submit-answer-btn">submit</button>
+             <label id="lbl8" style="visibility: hidden; color: red;" >Wrong</label>
+            
+             <div id="div_ans8" style="display:none;" class="explain-div" >
+                 <button type="button"  id="btn88" class="exp-btn">View Explanation</button>
+                 <div id="show_ans8" class="explanation">  We just casted this from void to int, so it prints 5 <br>
+                 </div>
+                 <script>  $("#show_ans8").hide();</script>
+             </div>
+            </div>
+<hr>
+           <!-- end -->
+           <p class="question">9.Which of the following statements are correct about the program ?<br/></p>
+          <pre>
+            #include <iostream>
+              using namespace std;
+              int main()
+              {
+                  int a = 5, c;
+                  void *p = &a;
+                  double b = 3.14;
+                  p = &b;
+                  c = a + b;
+                  cout << c << '\n' << p;
+                  return 0;
+              }
+          </pre>
+           <div class="options">
+             <input id="a91" type="radio" value="A" name="first" />&nbsp;&nbsp;8,memory address<br/><br/>
+             <input id="a92" type="radio" value="b" name="first" />&nbsp;&nbsp;8.14<br/><br/>
+             <input id="a93" type="radio" value="c" name="first" />&nbsp;&nbsp;memory address<br/><br/>
+             <input id="a94" type="radio" value="d" name="first" />&nbsp;&nbsp;12<br/><br/>
+             <button id="btn9"  type="submit" class="submit-answer-btn">submit</button>
+             <label id="lbl9" style="visibility: hidden; color: red;" >Wrong</label>
+            
+             <div id="div_ans9" style="display:none;" class="explain-div" >
+                 <button type="button"  id="btn99" class="exp-btn">View Explanation</button>
+                 <div id="show_ans9" class="explanation"> In this program, we are just adding the two values and printing it.<br>
+
+                 </div>
+                 <script>  $("#show_ans9").hide();</script>
+             </div>
+            </div>
+            <hr>
+            <p class="question">10. What we can’t do on a void pointer? ?<br/></p>
+              <div class="options">
+              <input id="a101" type="radio" value="A" name="first" />&nbsp;&nbsp;pointer arithmetc<br/><br/>
+              <input id="a102" type="radio" value="b" name="first" />&nbsp;&nbsp;pointer function<br/><br/>
+              <input id="a103" type="radio" value="c" name="first" />&nbsp;&nbsp;pointer objects<br/><br/>
+              <input id="a104" type="radio" value="d" name="first" />&nbsp;&nbsp;pointer function and objects<br/><br/>
+              <button id="btn10"  type="submit" class="submit-answer-btn">submit</button>
+              <label id="lbl10" style="visibility: hidden; color: red;" >Wrong</label>
+             
+              <div id="div_ans10" style="display:none;" class="explain-div" >
+                  <button type="button"  id="btn1010" class="exp-btn">View Explanation</button>
+                  <div id="show_ans10" class="explanation">Because the void pointer is used to cast the variables only, So pointer arithmetic can’t be done in a void pointer.<br>
+                  </div>
+                  <script>  $("#show_ans10").hide();</script>
+              </div>
+             </div> 
+             <button id="previous" onclick="document.location='c.html' " >previous</button>   
+      </div>
+    </div>
+    <div id="score">
+      <button type="button" onclick="showResult()">score</button>
+      <label id="result">0</label> out of 10
+    </div>
+    <div class="related-topic">
+      <h1>Other topics</h1>
+      <ul>
+        <a href="cpp.html"><li>C++</li></a>
+        <a href="java.html"><li>JAVA</li></a>
+        <a href="ds.html"><li>Data Structure</li></a>
+      </ul>
+    </div>
+    <div id="my-footer" >
+      <h1 id="get-in-touch">Get in Touch</h1>
+      <h1 id="if-you">If you love coding as much as I do ?</h1>
+      <p>If you love coding as much as I do ? <br>
+      then Let's discuss the problems of different languages.
+      lets support each other.</p>
+    </div>
+    <div id="dm-div"><a href="https://www.linkedin.com/in/pankaj-kharai-235b4517b/"><button  id="contactme-btn" type="button" onclick="" >CONTACT ME</button></a>
+    </div>
+    <div id="top-btn"><a href="#top"><span>Go to top</span></a></div>
+    <!-- <div id="footer" > -->
+      <div id="footer-link">
+        <h1><i class="fas fa-copyright"></i>copyright 2020 quizShow.com   | privacy | terms n conditions </h1>
+      </div>
+    
+
+    <div class="vertical-bar">
+      <div class="search-icon" >
+        <i class="fas fa-list"></i>
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="social-icon" > 
+        <a href="https://www.facebook.com/pankaj.kharai.73"> <i class="fab fa-facebook"></i></a><br>
+        <a href="https://www.instagram.com/pankaj_kharai/?hl=en"><i class="fab fa-instagram"></i></a><br>
+        <a href="https://twitter.com/pranaykharai"><i class="fab fa-twitter"></i></a><br>
+        <a href="https://www.linkedin.com/in/pankaj-kharai-235b4517b/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <br/> 
+  </div>
+</div> 
+</body>
+<script>
+  var show = document.getElementById("nav-link");
+  function showMenu()
+  {
+    show.style.right = "0";
+  }
+  function closeMenu()
+  {
+    show.style.right = "-200px";
+  }
+</script>
+</html>

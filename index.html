@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset = utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+ <link rel="stylesheet" href= " css/temp.css" >
+ <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+ 
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body >
+  <div class="hero" style="background-image: url(images/home_bg.jpeg);">
+    <div id="nav-bar">
+    <div id="nav-logo"><a href="index.html">QuizShow</a></div>
+    <div id="nav-link" >
+        <i class="fa fa-close" onclick="closeMenu()"></i>
+      <ul>
+        <a href="#"><li>course</li></a>
+        <a><li>topic<i class="fas fa-angle-double-down"></i>
+          <div class="sub-menu">
+            <ul>
+              <a href="c.html"><li>C</li></a>
+              <a href="cpp.html"><li>c++</li></a>
+              <a href="java.html"><li>Java</li></a>
+              <a href="ds.html"><li>Data Structure</li></a>
+            </ul>
+          </div>
+        </li></a>
+        <a href="#"><li>about us</li></a>
+      </ul>
+      <button type="submit" onclick="func()" class="signup-btn">sign up</button>
+      <script>
+        function func()
+        {
+          alert("This feature will come soon");
+        }
+      </script>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+
+  </div>
+  <div class="banner">
+    <h1>WelCome <br>to the</h1>
+<h1>Learning zone</h1>
+    <button type="button" onclick="document.location='c.html' " class="explore-btn">explore</button> 
+  </div>
+  
+  <div class="vertical-bar">
+    <div class="search-icon" >
+      <i class="fas fa-list"></i>
+      <i class="fas fa-search"></i>
+    </div>
+    <div class="social-icon" > 
+      <a href="https://www.facebook.com/pankaj.kharai.73"><i class="fab fa-facebook"></i></a><br>
+
+      <a href="https://www.instagram.com/pankaj_kharai/?hl=en"><i class="fab fa-instagram"></i></a> <br>
+      <a href="https://twitter.com/pranaykharai"><i class="fab fa-twitter"></i></a><br>
+      <a href="https://www.linkedin.com/in/pankaj-kharai-235b4517b/"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </div>
+<br/> 
+<div id="intro-div">
+  <h1 >Dear Students,</h1><br>
+  <p id="intro">This is a platform where you can enhance your computer knowledge.<br><br>
+    Our aim is to give every possible way to crack interviews of your dream companies.<br><br> We need you to be focus , honest to your goals and here we are to support you.</p>
+</div>
+<div id="my-footer" >
+  <h1 id="get-in-touch">Get in Touch</h1>
+  <h1 id="if-you">If you love coding as much as I do ?</h1>
+  <p>If you love coding as much as I do ? <br>
+  then Let's discuss the problems of different languages.
+  lets support each other.</p>
+</div>
+<div id="dm-div"><a href="https://www.linkedin.com/in/pankaj-kharai-235b4517b/"><button  id="contactme-btn" type="button" onclick="" >CONTACT ME</button></a>
+</div>
+
+<!-- <div id="footer" > -->
+  <div id="footer-link">
+    
+    <h1><i class="fas fa-copyright"></i>copyright 2020 quizShow.com | privacy | terms n conditions </h1>
+  </div>
+
+<div>
+
+ </div>
+</div> 
+</body>
+<script>
+  var show = document.getElementById("nav-link");
+  function showMenu()
+  {
+    show.style.right = "0";
+  }
+  function closeMenu()
+  {
+    show.style.right = "-200px";
+  }
+</script>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+    <link rel="stylesheet" href= " css/paper.css" >
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <script src="jquery/jquery.js" type="text/javascript"></script>
+    <script src="jquery/paper-c.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body >
+    <div class="hero" style="background:white;">
+      <div id="nav-bar">
+        <div id="nav-logo"><a href="index.html">QuizShow</a></div>
+        <div id="nav-link" >
+          <i class="fa fa-close" onclick="closeMenu()"></i>
+          <ul>
+          <a href="#"><li>course</li></a>
+          <a><li>topic<i class="fas fa-angle-double-down"></i>
+            <div class="sub-menu">
+              <ul>
+
+                <a href="#"><li>C</li></a>
+                <a href="cpp.html"><li>c++</li></a>
+                <a href="java.html"><li>Java</li></a>
+                <a href="ds.html"><li>Data Structure</li></a>
+              </ul>
+            </div>
+            </li></a>
+          <a href="#"><li>about us</li></a>
+          </ul>
+          <button type="submit" onclick="func()" class="signup-btn">sign up</button>
+          <script>
+        function func()
+        {
+          alert("This feature will come soon");
+        }
+      </script>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+    <a name="top"></a>
+    <div class="page-heading">
+      <h1>C Language Questions</h1>
+    </div>
+    <div class="range">
+      <a href="index.html">Home</a> \\ <a href="#">C</a> \\ C-questions-1
+    </div>
+    <div>
+      <div class="paper">
+        <p class="question">1. Which of the following statements should be obtain a remainder after dividing 3.14 by 2.1 ?<br/></p>
+        <div class="options">
+          <input id="a11" type="radio" value="A" name="first" />&nbsp;&nbsp;rem = 3.14 % 2.1; <br/><br/>
+          <input id="a12" type="radio" value="b" name="first" />&nbsp;&nbsp;rem = modf(3.14 , 2.1); <br/><br/>
+          <input id="a13" type="radio" value="c" name="first" />&nbsp;&nbsp;rem = fmod(3.14 , 2.1); <br/><br/>
+          <input id="a14" type="radio" value="d" name="first" />&nbsp;&nbsp;Remainder can't be obtain in floating point division. <br/><br/>
+          <button id="btn1"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl1" style="visibility:hidden ; color: red;" >Wrong</label>
+
+          <div id="div_ans1" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn11" class="exp-btn">View Explanation</button>
+              <div id="show_ans1" class="explanation"> fmod(x,y) = calculates x modulo y ,the reminder of x/y <br>
+                This function is same as the modulus operator but it performs floating point division.
+              </div>
+              <script>  $("#show_ans1").hide();</script>
+          </div>
+        </div>
+<hr>
+
+         <p class="question">2. What is (void*)0 ?<br/></p>
+         <div class="options">
+           <input id="a21" type="radio" value="A" name="first" />&nbsp;&nbsp;Representation of null pointer <br/><br/>
+           <input id="a22" type="radio" value="b" name="first" />&nbsp;&nbsp;Representation of Void pointer <br/><br/>
+           <input id="a23" type="radio" value="c" name="first" />&nbsp;&nbsp;error <br/><br/>
+           <input id="a24" type="radio" value="d" name="first" />&nbsp;&nbsp;none  <br/><br/>
+           <button id="btn2"  type="submit" class="submit-answer-btn">submit</button>
+           <label id="lbl2" style="visibility: hidden; color: red;" >Wrong</label>
+ 
+           <div id="div_ans2" style="display:none;" class="explain-div" >
+               <button type="button"  id="btn22" class="exp-btn">View Explanation</button>
+               <div id="show_ans2" class="explanation"> There is no explanation  <br>
+               </div>
+               <script>  $("#show_ans2").hide();</script>
+           </div>
+          </div>
+          <hr>
+
+          <p class="question">3. In which header file is the NULL macro defined ?<br/></p>
+          <div class="options">
+          <input id="a31" type="radio" value="A" name="first" />&nbsp;&nbsp;stdio.h <br/><br/>
+          <input id="a32" type="radio" value="b" name="first" />&nbsp;&nbsp;stddef.h<br/><br/>
+          <input id="a33" type="radio" value="c" name="first" />&nbsp;&nbsp;Both a and b<br/><br/>
+          <input id="a34" type="radio" value="d" name="first" />&nbsp;&nbsp;Math.h<br/><br/>
+          <button id="btn3"  type="submit" class="submit-answer-btn">submit</button>
+          <label id="lbl3" style="visibility:hidden ; color: red;" >Wrong</label>
+
+          <div id="div_ans3" style="display: none;" class="explain-div" >
+              <button type="button"  id="btn33" class="exp-btn">View Explanation</button>
+              <div id="show_ans3" class="explanation"> The Macro 'NULL' is defined in locale.h,stddef.h, stdio.h,stdlib.h,string.h, time.hand wchar.h .<br>
+              </div>
+              <script>  $("#show_ans3").hide();</script>
+          </div>
+        </div>
+
+        <hr>
+
+          <p class="question">4.How many bytes are occupied by <span style="color: blue;">near,far</span> and <span style="color: blue;">huge</span> pointers(DOS) ?<br/></p>
+          <div class="options">
+            <input id="a41" type="radio" value="A" name="first" />&nbsp;&nbsp;near = 2 far = 4 huge = 4<br/><br/>
+            <input id="a42" type="radio" value="b" name="first" />&nbsp;&nbsp;near = 4 far = 8 huge = 8<br/><br/>
+            <input id="a43" type="radio" value="c" name="first" />&nbsp;&nbsp;near = 2 far = 4 huge = 8<br/><br/>
+            <input id="a44" type="radio" value="d" name="first" />&nbsp;&nbsp;near = 4 far = 4 huge = 8<br/><br/>
+            <button id="btn4"  type="submit" class="submit-answer-btn">submit</button>
+            <label id="lbl4" style="visibility: hidden; color: red;" >Wrong</label>
+          
+            <div id="div_ans4" style="display:none;" class="explain-div" >
+                <button type="button"  id="btn44" class="exp-btn">View Explanation</button>
+                <div id="show_ans4" class="explanation"> <span style="color: blue;">near = 2,far = 4</span> and <span style="color: blue;">huge = 4</span> pointers exist only under DOS.<br>Under windows and linux every pointers is 4 bytes long. <br>
+                </div>
+                <script>  $("#show_ans4").hide();</script>
+            </div>
+           </div>
+           <!-- start -->
+           <hr>
+
+            <p class="question">5. What will be the output of the following C code ?<br/></p>
+            <pre class="code-part">
+              #include <stdio.h>
+                void main()
+                {
+                    float x = 0.1;
+                    if (x == 0.1)
+                        printf("quizShow");
+                    else
+                        printf("Advanced C Classes");
+                }
+            </pre>
+           <div class="options">
+           <input id="a51" type="radio" value="A" name="first" />&nbsp;&nbsp;quizShow <br/><br/>
+           <input id="a52" type="radio" value="b" name="first" />&nbsp;&nbsp;Advanced C Classes<br/><br/>
+           <input id="a53" type="radio" value="c" name="first" />&nbsp;&nbsp;Runtime error.<br/><br/>
+           <input id="a54" type="radio" value="d" name="first" />&nbsp;&nbsp;Compile time error. <br/><br/>
+           <button id="btn5"  type="submit" class="submit-answer-btn">submit</button>
+           <label id="lbl5" style="visibility:hidden ; color: red;" >Wrong</label>
+
+           <div id="div_ans5" style="display: none;" class="explain-div" >
+               <button type="button"  id="btn55" class="exp-btn">View Explanation</button>
+               <div id="show_ans5" class="explanation"> None <br>
+               </div>
+               <script>  $("#show_ans5").hide();</script>
+           </div>
+         </div>
+
+         <hr>
+
+          <p class="question">6. What will be the output of the following C code ?<br/></p>
+          <pre>
+            #include <stdio.h>
+              void main()
+              {
+                  float x = 0.1;
+                  printf("%d, ", x);
+                  printf("%f", x);
+              }
+          </pre>
+          <div class="options">
+            <input id="a61" type="radio" value="A" name="first" />&nbsp;&nbsp;0.100000, junk value <br/><br/>
+            <input id="a62" type="radio" value="b" name="first" />&nbsp;&nbsp;Junk value, 0.100000<br/><br/>
+            <input id="a63" type="radio" value="c" name="first" />&nbsp;&nbsp;0, 0.100000<br/><br/>
+            <input id="a64" type="radio" value="d" name="first" />&nbsp;&nbsp;0, 0.999999<br/><br/>
+            <button id="btn6"  type="submit" class="submit-answer-btn">submit</button>
+            <label id="lbl6" style="visibility: hidden; color: red;" >Wrong</label>
+          
+            <div id="div_ans6" style="display:none;" class="explain-div" >
+                <button type="button"  id="btn66" class="exp-btn">View Explanation</button>
+                <div id="show_ans6" class="explanation"> none  <br>
+                </div>
+                <script>  $("#show_ans6").hide();</script>
+            </div>
+           </div>
+           <hr>
+
+          <p class="question">7. What will be the output of the following C code ?<br/></p>
+          <pre>
+            #include <stdio.h>
+              int main()
+              {
+                  unsigned int i = 23;
+                  signed char c = -23;
+                  if (i > c)
+                      printf("Yes\n");
+                  else if (i < c)
+                      printf("No\n");
+              }
+          </pre>
+           <div class="options">
+           <input id="a71" type="radio" value="A" name="first" />&nbsp;&nbsp;Yes<br/><br/>
+           <input id="a72" type="radio" value="b" name="first" />&nbsp;&nbsp;No<br/><br/>
+           <input id="a73" type="radio" value="c" name="first" />&nbsp;&nbsp;Depends on the compiler<br/><br/>
+           <input id="a74" type="radio" value="d" name="first" />&nbsp;&nbsp;Depends on the Operating system<br/><br/>
+           <button id="btn7"  type="submit" class="submit-answer-btn">submit</button>
+           <label id="lbl7" style="visibility:hidden ; color: red;" >Wrong</label>
+
+           <div id="div_ans7" style="display: none;" class="explain-div" >
+               <button type="button"  id="btn77" class="exp-btn">View Explanation</button>
+               <div id="show_ans7" class="explanation"> none.<br>
+               </div>
+               <script>  $("#show_ans7").hide();</script>
+           </div>
+         </div>
+         <hr>
+
+
+           <p class="question">8. When double is converted to float, then the value is ?<br/></p>
+           <div class="options">
+             <input id="a81" type="radio" value="A" name="first" />&nbsp;&nbsp;truncated<br/><br/>
+             <input id="a82" type="radio" value="b" name="first" />&nbsp;&nbsp;rounded<br/><br/>
+             <input id="a83" type="radio" value="c" name="first" />&nbsp;&nbsp;depends on the compiler<br/><br/>
+             <input id="a84" type="radio" value="d" name="first" />&nbsp;&nbsp;depends on the standard<br/><br/>
+             <button id="btn8"  type="submit" class="submit-answer-btn">submit</button>
+             <label id="lbl8" style="visibility: hidden; color: red;" >Wrong</label>
+            
+             <div id="div_ans8" style="display:none;" class="explain-div" >
+                 <button type="button"  id="btn88" class="exp-btn">View Explanation</button>
+                 <div id="show_ans8" class="explanation"> none <br>
+                 </div>
+                 <script>  $("#show_ans8").hide();</script>
+             </div>
+            </div>
+            <hr>
+
+           <!-- end -->
+           <p class="question">9. 2. Which keyword is used to prevent any changes in the variable within a C program ?<br/></p>
+           <div class="options">
+             <input id="a91" type="radio" value="A" name="first" />&nbsp;&nbsp;immutable<br/><br/>
+             <input id="a92" type="radio" value="b" name="first" />&nbsp;&nbsp;mutable<br/><br/>
+             <input id="a93" type="radio" value="c" name="first" />&nbsp;&nbsp;const<br/><br/>
+             <input id="a94" type="radio" value="d" name="first" />&nbsp;&nbsp;volatile<br/><br/>
+             <button id="btn9"  type="submit" class="submit-answer-btn">submit</button>
+             <label id="lbl9" style="visibility: hidden; color: red;" >Wrong</label>
+            
+             <div id="div_ans9" style="display:none;" class="explain-div" >
+                 <button type="button"  id="btn99" class="exp-btn">View Explanation</button>
+                 <div id="show_ans9" class="explanation"> const is a keyword constant in C program <br>
+                 </div>
+                 <script>  $("#show_ans9").hide();</script>
+             </div>
+            </div>
+<hr>
+ 
+            <p class="question">10. Which of the following is not a pointer declaration ?<br/></p>
+            <div class="options">
+              <input id="a101" type="radio" value="A" name="first" />&nbsp;&nbsp;char a[10]<br/><br/>
+              <input id="a102" type="radio" value="b" name="first" />&nbsp;&nbsp;char a[] = {‘1’, ‘2’, ‘3’, ‘4’};<br/><br/>
+              <input id="a103" type="radio" value="c" name="first" />&nbsp;&nbsp;char *str;<br/><br/>
+              <input id="a104" type="radio" value="d" name="first" />&nbsp;&nbsp;char a;<br/><br/>
+              <button id="btn10"  type="submit" class="submit-answer-btn">submit</button>
+              <label id="lbl10" style="visibility: hidden; color: red;" >Wrong</label>
+             
+              <div id="div_ans10" style="display:none;" class="explain-div" >
+                  <button type="button"  id="btn1010" class="exp-btn">View Explanation</button>
+                  <div id="show_ans10" class="explanation"> Array declaration are pointer declaration<br>
+                  </div>
+                  <script>  $("#show_ans10").hide();</script>
+              </div>
+             </div> 
+             <button id="next" onclick="document.location='c2.html' " >next</button>   
+      </div>
+    </div>
+    <div id="score">
+      <button type="button" onclick="showResult()">score</button>
+      <label id="result">0</label> out of 10
+    </div>
+    <div class="related-topic">
+      <h1>Other topics</h1>
+      <ul>
+        <a href="cpp.html"><li>C++</li></a>
+        <a href="java.html"><li>JAVA</li></a>
+        <a href="ds.html"><li>Data Structure</li></a>
+      </ul>
+    </div>
+    <div id="my-footer" >
+      <h1 id="get-in-touch">Get in Touch</h1>
+      <h1 id="if-you">If you love coding as much as I do ?</h1>
+      <p>If you love coding as much as I do ? <br>
+      then Let's discuss the problems of different languages.
+      lets support each other.</p>
+    </div>
+    <div id="dm-div"><a href="https://www.linkedin.com/in/pankaj-kharai-235b4517b/"><button  id="contactme-btn" type="button" onclick="" >CONTACT ME</button></a>
+    </div>
+    <div id="top-btn"><a href="#top"><span>Go to top</span></a></div>
+
+    <!-- <div id="footer" > -->
+      <div id="footer-link">
+        <h1><i class="fas fa-copyright"></i>copyright 2020 quizShow.com  | privacy | terms n conditions</h1>
+      </div>
+    
+
+    <div class="vertical-bar">
+      <div class="search-icon" >
+        <i class="fas fa-list"></i>
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="social-icon" > 
+        <a href="https://www.facebook.com/pankaj.kharai.73"> <i class="fab fa-facebook"></i></a><br>
+        <a href="https://www.instagram.com/pankaj_kharai/?hl=en"><i class="fab fa-instagram"></i></a><br>
+        <a href="https://twitter.com/pranaykharai"><i class="fab fa-twitter"></i></a><br>
+        <a href="https://www.linkedin.com/in/pankaj-kharai-235b4517b/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <br/> 
+  </div>
+</div> 
+</body>
+<script>
+  var show = document.getElementById("nav-link");
+  function showMenu()
+  {
+    show.style.right = "0";
+  }
+  function closeMenu()
+  {
+    show.style.right = "-200px";
+  }
+</script>
+</html>
